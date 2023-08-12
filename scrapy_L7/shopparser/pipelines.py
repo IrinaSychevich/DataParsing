@@ -38,8 +38,6 @@ class ObjectPhotosPipeline(ImagesPipeline):
                     yield scrapy.Request(photo, meta=meta)
                 except Exception as e:
                     print(e)
-            # return [scrapy.Request(x, meta={'image_name': item["name"]})
-            #         for x in item.get('photos', [])]
 
 
     def file_path(self, request, response=None, info=None):
