@@ -3,10 +3,10 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 
-import hashlib
+
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
-import os
+
 import scrapy
 from itemadapter import ItemAdapter
 from scrapy.pipelines.images import ImagesPipeline
